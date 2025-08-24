@@ -5,7 +5,6 @@ My personal forest of Google ADK agents
 ## Setup the environment
 
 ```bash
-
 # Only once to create the virtual enviroment
 python3 -m venv .venv
 
@@ -14,5 +13,25 @@ source .venv/bin/activate
 
 # Only once, or whenever there is a new library to install
 pip install -r requirements.txt
+```
+
+Setup an Google Agent API key: https://youtu.be/P4VFL9nIaIA?si=07Ysn70KZYC6LsDp&t=887
+
+
+## Pavia news
+
+This agent finds the latest news and events in Pavia, Italy.
+
+To run the agent:
+
+```bash
+# from the adk_forest folder
+cd pavia_news
+
+# run the agent as a web service
+adk web
+
+# Or run the agent from cli
+adk adk run pavia_news_agent
 ```
 
