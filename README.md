@@ -15,7 +15,10 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Setup an Google Agent API key: https://youtu.be/P4VFL9nIaIA?si=07Ysn70KZYC6LsDp&t=887
+Create an .env file under the root folder of this repo, using the [.env.example](.env.example) as example.
+Follow [this tutorial](https://youtu.be/P4VFL9nIaIA?si=07Ysn70KZYC6LsDp&t=887) to setup an Google Agent.
+
+
 
 
 ## Pavia news
