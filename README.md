@@ -38,3 +38,21 @@ adk web
 adk adk run pavia_news_agent
 ```
 
+
+## house_assistant
+
+This agent is able to parse the url of a page specified by the user and returns a summary of the most important information present in the page.
+
+To run the agent:
+
+```bash
+# from the adk_forest folder
+cd house_assistant
+
+# install the dependencies from requirements.txt
+pip install -r requirements.txt
+
+# run the agent as a web service
+adk web
+```
+
