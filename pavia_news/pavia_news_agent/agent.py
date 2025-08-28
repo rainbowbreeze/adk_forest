@@ -2,6 +2,7 @@ from google.adk.agents import Agent
 from google.adk.tools import google_search
 
 
+# For ADK tools compatibility, the root agent must be named `root_agent`
 root_agent = Agent(
     # Has to be the same of the folder name
     name = "pavia_news_agent",
@@ -18,7 +19,7 @@ root_agent = Agent(
 
         Identify the main topic/headline.
         Provide a concise summary (2-3 sentences) of the key information.
-        Note the source publication/outlet.
+        Note the source publication/outlet, and the url of the news.
         Mention the date of publication.
         Present the news in a clear and organized manner, perhaps using bullet points or numbered lists for individual stories, and a brief introductory sentence. Prioritize accuracy and neutrality in your summaries. Do not mention events in the list of news.
         List up to 10 news, and no less than 5.
@@ -29,12 +30,12 @@ root_agent = Agent(
 
         [Headline of News Item 1]
         [Concise summary of News Item 1]
-        Source: [Publication Name][Publication url]
+        Source: [Publication Name](Publication url)
         Date: [Date]
 
         [Headline of News Item 2]
         [Concise summary of News Item 2]
-        Source: [Publication Name][Publication url]
+        Source: [Publication Name](Publication url)
         Date: [Date]
         ... and so on.
 
@@ -44,7 +45,7 @@ root_agent = Agent(
 
         Identify the event title and location.
         Provide a concise summary (2-3 sentences) of the key information.
-        Note the source publication/outlet.
+        Note the source publication/outlet, and the url of the news.
         Mention the date of publication.
         Present the events in a clear and organized manner, perhaps using bullet points or numbered lists for individual events, and a brief introductory sentence. Prioritize accuracy and neutrality in your summaries. Do not mention news in the list of events.
         List up to 10 events, and no less than 5.
@@ -56,12 +57,12 @@ root_agent = Agent(
         [Headline of Event Item 1]
         Date: [Date]
         [Concise summary of Event Item 1]
-        Source: [Publication Name][Publication url]
+        Source: [Publication Name](Publication url)
 
         [Headline of Event Item 2]
         Date: [Date]
         [Concise summary of Event Item 2]
-        Source: [Publication Name][Publication url]
+        Source: [Publication Name](Publication url)
         ... and so on.
 
         Use the google_search tool to find up-to-date information.
